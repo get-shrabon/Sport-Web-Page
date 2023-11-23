@@ -429,6 +429,59 @@ footer i {
   gap: 10px;
 }
 
+/********************************************************************* Team Member Page All CSS Here **************************************************************************/
+.team__container {
+  background-image: url("../Images/team_container_bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 0;
+}
+.team__members {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  gap: 10px;
+  column-gap: 10px;
+}
+.team__membar {
+  border-radius: 10px;
+  border: 1px solid #e81f3e;
+  transition: 0.3s all;
+  background-color: white;
+}
+.team__membar:hover {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+}
+.team__membar img {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  position: relative;
+}
+.team__detail {
+  padding: 15px;
+}
+.player__no {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: #e81f3e;
+  color: white;
+  border-top-left-radius: 10px;
+  padding: 5px 10px;
+}
+/********************************************************************* Schedule Page All CSS Here **************************************************************************/
+.schedule__container {
+  padding: 50px 0;
+  background-image: url("../Images/team_container_bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.schedule__container table {
+  background-color: white;
+}
 /********************************************************************* Contact Page All CSS Here **************************************************************************/
 .contact__container {
   padding: 50px 0;
@@ -540,6 +593,10 @@ textarea:focus {
   .contact__container iframe {
     width: 100%;
   }
+  .team__members {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 @media screen and (min-width: 577px) and (max-width: 992px) {
@@ -577,6 +634,10 @@ textarea:focus {
   }
   .contact__container iframe {
     width: 100%;
+  }
+  .team__members {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
