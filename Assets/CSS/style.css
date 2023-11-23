@@ -1,0 +1,599 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+:root {
+  --p-color: #e81f3e;
+  --s-color: #171e36;
+}
+/********************** ROOT Related ALL CSS Here ****************************/
+.container {
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+ul {
+  list-style: none;
+}
+.primary__btn {
+  border: none;
+  cursor: pointer;
+  padding: 8px 15px;
+  text-transform: uppercase;
+  font-family: cursive;
+  color: white;
+  background-color: var(--p-color);
+  border: 1px solid var(--p-color);
+  border-radius: 5px;
+  transition: 0.4s all;
+}
+.primary__btn:hover {
+  background-color: rgba(0, 0, 0, 0.685);
+}
+.secondary__btn {
+  border: none;
+  cursor: pointer;
+  padding: 8px 15px;
+  text-transform: uppercase;
+  font-family: cursive;
+  color: white;
+
+  background-color: rgba(0, 0, 0, 0.685);
+  border: 1px solid var(--p-color);
+  border-radius: 5px;
+  transition: 0.4s all;
+}
+.secondary__btn:hover {
+  background-color: var(--p-color);
+}
+.position-relative {
+  position: relative;
+}
+.d-flex {
+  display: flex;
+}
+.align-center {
+  align-items: center;
+}
+.gap-3 {
+  gap: 15px;
+}
+.p-3 {
+  padding: 15px;
+}
+.p-100 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.border-right {
+  border-right: 1px solid #222c4e;
+}
+.border {
+  border: 1px solid #e1e1e1;
+}
+.p-color {
+  color: var(--p-color);
+}
+.fw-bold {
+  font-weight: bold;
+}
+.text-center {
+  text-align: center;
+}
+.divider {
+  width: 25%;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  height: 2px;
+  background-color: var(--p-color);
+}
+
+/* Custom Table */
+table,
+tbody,
+thead,
+th,
+tr,
+td {
+  border: 1px solid #e1e1e1;
+  border-collapse: collapse;
+}
+table {
+  width: 100%;
+}
+table tr td {
+  padding: 15px !important;
+}
+thead th {
+  padding: 15px;
+  background-color: var(--p-color);
+  color: white;
+}
+tbody tr:nth-child(odd) {
+  background-color: aliceblue;
+}
+tbody tr {
+  transition: 0.3s all;
+}
+tbody tr:hover {
+  background-color: #e1e1e1aa;
+}
+/********************************* Header All Css *****************************************/
+header {
+  padding: 20px 0;
+  background-color: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav__items {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.nav__link {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: 400;
+  transition: 0.3s all;
+}
+.nav__link:hover {
+  color: black;
+}
+.active {
+  font-weight: 600;
+  color: black;
+}
+/************************************************ Hero Area All CSS Here*************************************** */
+.hero__container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.496), rgba(0, 0, 0, 0.496)),
+    url("../Images/Hero-Area-BG.jpg");
+  width: 100%;
+  padding: 50px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+.hero__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero__content img {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  left: -100px;
+}
+.hero__info {
+  position: relative;
+  right: -100px;
+}
+.hero__content h1 {
+  font-size: 63px;
+  font-family: Roboto Condensed;
+  line-height: 67px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.hero__title {
+  display: flex;
+  flex-direction: column;
+}
+.hero__title span {
+  white-space: nowrap;
+}
+.change__color {
+  color: var(--p-color);
+}
+/************************************************ Quick Links All CSS Here*************************************** */
+.links__container {
+  padding: 35px 0;
+  background-color: var(--s-color);
+  position: relative;
+  top: -100px;
+  border-top: 3px solid var(--p-color);
+  border-radius: 10px;
+}
+.links__items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.links__item {
+  padding: 20px;
+}
+.links__item a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  transition: 0.3s all;
+  opacity: 0.5;
+  font-family: roboto;
+}
+.links__item a:hover {
+  opacity: 1;
+}
+.links__item .p-color {
+  margin-top: 10px;
+  font-weight: 600;
+}
+.number {
+  font-size: 40px;
+  color: #222c4e;
+}
+/**************************************************** Match Details All CSS Here************************************ */
+.match__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.match2 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 10px;
+}
+.head {
+  color: white;
+  background-color: var(--p-color);
+  padding: 10px 0;
+  text-align: center;
+}
+.team__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+.team__info p {
+  font-size: 14px;
+}
+.team__info img {
+  width: 50px;
+}
+.vs {
+  width: fit-content;
+  background-color: aliceblue;
+  padding: 7px 15px;
+  border-radius: 10px;
+  color: var(--p-color);
+  font-weight: bold;
+  margin: auto;
+}
+.single__match {
+  background-color: #171e36;
+  color: white;
+  border-radius: 10px;
+}
+.single__match .vs {
+  background-color: #222c4e;
+  color: white;
+  margin-top: 5px;
+}
+.single__match h3 {
+  width: 40px;
+  font-size: 14px;
+}
+.bottom__link {
+  border-top: 1px solid #222c4e;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  text-align: center;
+}
+.bottom__link p {
+  font-size: 12px;
+  width: 50%;
+}
+.t__img {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: none;
+}
+.t__img img {
+  width: 20px;
+}
+.banner {
+  width: 100%;
+  padding: 70px 0;
+  background-image: url("../Images/banner-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  margin: 50px 0 0 0;
+}
+/**************************************************** News And Gallery All CSS Here************************************ */
+.gallery__blog {
+  background-image: linear-gradient(
+    90deg,
+    rgb(245, 238, 238),
+    rgba(255, 238, 238, 0.701)
+  );
+  padding: 50px 0;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
+  grid-gap: 1rem;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.gallery img {
+  background-position: top;
+  background-size: cover;
+  height: 280px;
+  width: 300px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.gallery img:hover {
+  scale: calc(0.9);
+}
+.blog__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.blog {
+  background-color: white;
+  width: fit-content;
+  border-radius: 10px;
+  padding: 10px;
+}
+.blog_img {
+  overflow: hidden;
+}
+.blog img {
+  border-radius: 10px;
+  transition: 0.4s all;
+}
+.blog a {
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+}
+.blog p {
+  line-height: 30px;
+}
+.blog p span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.blog:hover a {
+  color: var(--p-color);
+}
+.blog:hover img {
+  scale: calc(1.1);
+}
+.blog:hover .secondary__btn {
+  background-color: var(--p-color);
+}
+/**************************************************** Sponsor All CSS Here************************************ */
+.sponsor__container {
+  margin: 50px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+.sponsor__container img {
+  width: 50px;
+  height: 50px;
+}
+/**************************************************** Footer All CSS Here************************************ */
+footer {
+  padding: 40px 0;
+  background-color: #171e36;
+  color: rgba(255, 255, 255, 0.658);
+}
+.footer__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.footer__content p {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+footer i {
+  color: var(--p-color);
+}
+.quick__links {
+  display: flex;
+  flex-direction: column;
+  padding-left: 70px;
+  gap: 10px;
+}
+.quick__links a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.658);
+}
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/********************************************************************* Contact Page All CSS Here **************************************************************************/
+.contact__container {
+  padding: 50px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  gap: 10px;
+}
+.all_inputs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-bottom: 10px;
+}
+input,
+textarea {
+  border: 1px solid #222c4e;
+  padding: 8px;
+  width: 100% !important;
+  border-radius: 5px;
+}
+input,
+textarea:focus {
+  outline-color: #e81f3e;
+}
+.contact__container .primary__btn {
+  width: 100%;
+  margin-top: 10px;
+}
+.contact__title {
+  font-size: 50px;
+}
+
+/**************************************************** Responsive All CSS Here************************************ */
+
+@media screen and (max-width: 576px) {
+  .container {
+    width: 100%;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .nav__items {
+    flex-direction: column !important;
+  }
+  .hero__content {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .hero__content img {
+    width: 200px;
+    height: 200px;
+    left: -0px;
+  }
+  .hero__content h1 {
+    font-size: 20px;
+    line-height: inherit;
+  }
+  .hero__info {
+    position: relative;
+    right: 0px;
+  }
+  .links__items {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .links__items .border-right {
+    border-right: none;
+    border-bottom: 1px solid #222c4e;
+  }
+  .links__container {
+    top: -0;
+  }
+  .match__container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+  .blog__container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+  .footer__content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+  .sponsor__container {
+    margin: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .contact__container {
+    padding: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    gap: 10px;
+  }
+  .contact__container iframe {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .container {
+    width: 720px;
+  }
+  .hero__content h1 {
+    font-size: 50px;
+    line-height: inherit;
+  }
+  .hero__content img {
+    left: -70px;
+  }
+  .match__container {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    gap: 10px;
+  }
+  .match3 {
+    width: 100% !important;
+  }
+  .blog__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    justify-content: center;
+  }
+  .sponsor__container {
+    margin: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .contact__container iframe {
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    width: 1320px;
+  }
+}
