@@ -383,6 +383,9 @@ nav {
 .blog:hover .secondary__btn {
   background-color: var(--p-color);
 }
+.video{
+  margin-top: 20px;
+}
 /**************************************************** Sponsor All CSS Here************************************ */
 .sponsor__container {
   margin: 50px;
