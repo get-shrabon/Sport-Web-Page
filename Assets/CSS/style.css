@@ -23,6 +23,7 @@ ul {
 }
 .primary__btn {
   border: none;
+  text-decoration: none;
   cursor: pointer;
   padding: 8px 15px;
   text-transform: uppercase;
